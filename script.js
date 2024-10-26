@@ -1,8 +1,9 @@
-function toggleMenu() {
-    var navLinks = document.getElementById("navLinks");
-    if (navLinks.style.display === "flex" || navLinks.style.display === "block") {
-        navLinks.style.display = "none";
+// JavaScript for toggling the sidenav
+function toggleSidenav() {
+    const sidenav = document.querySelector('.sidenav');
+    if (sidenav.style.width === '0px' || sidenav.style.width === '') {
+        sidenav.style.width = '250px'; // Open the sidenav
     } else {
-        navLinks.style.display = "flex";
+        sidenav.style.width = '0'; // Close the sidenav
     }
 }

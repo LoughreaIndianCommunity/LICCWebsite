@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="RISHON KUMAWAT">
+    <title>Loughrea Indian Cultural Community LICC</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for fancy fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+    <style>
+        /* Container for profile cards */
+        .committee-container {
+            display: flex;
+            flex-direction: column; /* Stack members vertically */
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .committee-card {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; /* Align content to the left */
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 100%;
+            max-width: 600px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .member-photo {
+            margin-right: 20px; /* Space between the image and text */
+        }
+
+        .member-photo img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%; /* Make the image round */
+            object-fit: cover; /* Maintain aspect ratio */
+        }
+
+        .member-info h3 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .member-info p {
+            margin: 5px 0;
+            font-size: 1rem;
+        }
+
+        /* Social Media Icons */
+        .social-icons {
+            position: fixed; /* Fixed position to stay in the corner */
+            bottom: 10px; /* Distance from the bottom */
+            right: 10px; /* Distance from the right */
+            display: flex; /* Flexbox for alignment */
+            gap: 10px; /* Space between icons */
+        }
+
+        .social-icons a {
+            font-size: 24px; /* Icon size */
+            text-decoration: none; /* Remove underline */
+            transition: transform 0.3s; /* Transition effect for hover */
+        }
+
+        /* Icon colors */
+        .social-icons .instagram {
+            color: #E1306C; /* Instagram brand color */
+        }
+
+        .social-icons .facebook {
+            color: #3b5998; /* Facebook brand color */
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.1); /* Scale effect on hover */
+        }
+
+        /* Responsive design */
+        @media screen and (max-width: 768px) {
+            .committee-card {
+                flex-direction: column; /* Stack image and info vertically */
+                text-align: center;
+            }
+
+            .member-photo {
+                margin-right: 0; /* Reset margin for small screens */
+                margin-bottom: 15px; /* Space between image and text */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Loughrea Indian Cultural Community LICC</h1>
+    </div>
+
+    <!-- Hamburger menu icon -->
+    <div class="hamburger" onclick="toggleMenu()">
+        &#9776;
+    </div>
+
+    <!-- Navigation bar, initially hidden on small screens -->
+    <div id="navLinks" class="topnav">
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Upcoming Events.html">Upcoming Events</a>
+        <a href="Booking.html">Booking</a>
+        <a href="Contacts.html">Contacts</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <p>We are dedicated to offering prompt and reliable support to ensure that all your inquiries and requests are handled effectively. If you have any 
+           questions or need assistance, feel free to reach out to us at loughreaindiancc@gmail.com. Our team is here to assist you and provide 
+           the information you need. Don’t hesitate to get in touch, and we’ll ensure your concerns are addressed as quickly and thoroughly as possible..</p>
+        
+       
+
+        <p>Additionally, you can contact any of our committee members directly. They will do their best to get back to you as soon as possible.</p>
+
+        <!-- Committee Members Section -->
+        <div class="committee-container">
+            <!-- Committee Member Card -->
+            <div class="committee-card">
+                <div class="member-photo">
+                    <img src="john.jpg" alt="John Doe">
+                </div>
+                <div class="member-info">
+                    <h3>John Doe</h3>
+                    <p>Phone: +123 456 7890</p>
+                    <p>Email: john.doe@example.com</p>
+                </div>
+            </div>
+
+            <!-- Committee Member Card -->
+            <div class="committee-card">
+                <div class="member-photo">
+                    <img src="jane.jpg" alt="Jane Smith">
+                </div>
+                <div class="member-info">
+                    <h3>Jane Smith</h3>
+                    <p>Phone: +123 456 7891</p>
+                    <p>Email: jane.smith@example.com</p>
+                </div>
+            </div>
+
+            <!-- Add more committee members as needed -->
+        </div>
+    </div>
+
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+        <a href="https://www.instagram.com/loughreaindiancc/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/your_profile" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <!-- Footer Section -->
+    <footer style="background-color: #222; color: white; padding: 20px 0; text-align: center;">
+        <div class="footer-content">
+            <h2>Loughrea Indian Cultural Community (LICC)</h2>
+            <p>Uniting the community through cultural celebrations, events, and festivities.</p>
+            
+            <p>Join us in our upcoming events and celebrate the rich cultural heritage of India right here in Loughrea.</p>
+            
+            <p>
+                <strong>Contact Us:</strong><br>
+                Email: loughreaindiancc@gmail.com<br>
+            </p>
+            
+            <!-- Social Media Links -->
+            
+        </div>
+        
+        <!-- Footer Bottom Text -->
+        <div style="background-color: #111; padding: 10px 0; margin-top: 20px;">
+            <p style="margin: 0;">&copy; 2024 Loughrea Indian Cultural Community. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="RISHON KUMAWAT">
+    <title>Loughrea Indian Cultural Community LICC</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for fancy fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+    <style>
+        /* CSS for slideshow and responsiveness */
+        .slideshow-container {
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            position: relative;
+            max-width: 100%; /* Set to 100% to make it responsive */
+            margin: auto;
+            overflow: hidden; /* Hide overflow */
+            text-align: center; /* Center align text */
+        }
+
+        .slide {
+            display: none; /* Hide slides by default */
+            width: 100%; /* Full width, responsive */
+            max-width: 600px; /* Maximum width for each slide */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .active {
+            display: block; /* Show active slide */
+        }
+
+        img.responsive-image {
+            width: 100%; /* Scale image to fit within the container */
+            height: auto; /* Maintain aspect ratio */
+            display: block;
+            margin-left: auto; /* Center horizontally */
+            margin-right: auto; /* Center horizontally */
+            object-fit: contain; /* Ensures images fit nicely within the space without cropping */
+        }
+
+        .arrow {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            font-size: 30px;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+        .left-arrow {
+            left: 20px; /* Position on the left */
+        }
+
+        .right-arrow {
+            right: 20px; /* Position on the right */
+        }
+
+        .video-container {
+            text-align: center; /* Center align video */
+            margin-top: 20px; /* Space above video */
+        }
+
+        video {
+            max-width: 80%; /* Responsive video */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        /* CSS for social media icons */
+        .social-icons {
+            position: fixed; /* Fixed position to stay in the corner */
+            bottom: 10px; /* Distance from the bottom */
+            right: 10px; /* Distance from the right */
+            display: flex; /* Flexbox for alignment */
+            gap: 10px; /* Space between icons */
+            z-index: 1000; /* Ensure icons stay above other elements */
+        }
+
+        .social-icons a {
+            font-size: 24px; /* Icon size */
+            text-decoration: none; /* Remove underline */
+            transition: transform 0.3s; /* Transition effect for hover */
+        }
+
+        /* Icon colors */
+        .social-icons .instagram {
+            color: #E1306C; /* Instagram brand color */
+        }
+
+        .social-icons .facebook {
+            color: #3b5998; /* Facebook brand color */
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.1); /* Scale effect on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Loughrea Indian Cultural Community LICC</h1>
+    </div>
+
+    <!-- Hamburger menu icon -->
+    <div class="hamburger" onclick="toggleMenu()">
+        &#9776;
+    </div>
+
+    <!-- Navigation bar, initially hidden on small screens -->
+    <div id="navLinks" class="topnav">
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Upcoming Events.html">Upcoming Events</a>
+        <a href="Booking.html">Booking</a>
+        <a href="Contacts.html">Contacts</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <p>Here are some of the events we've hosted over the past two years. Feel free to explore them below and see the exciting activities we've had.  
+           If you find them interesting and would like to be part of future celebrations, don't hesitate to check out our upcoming events. There's always
+           something new and exciting on the horizon, and we'd love for you to join us!</p>
+        
+        <!-- Slideshow Section for Diwali 2022 -->
+        <h2>Here are a few past event photos and videos</h2>
+        <h2>1. Diwali 2022</h2>
+        
+        <div class="slideshow-container" id="diwaliSlideshow">
+            <div class="slide active">
+                <img src="DSC_2500.JPG" alt="Slide 1" class="responsive-image">
+            </div>
+            <div class="slide">
+                <img src="DSC_2510.JPG" alt="Slide 2" class="responsive-image">
+            </div>
+            <div class="slide">
+                <img src="DSC_2542.JPG" alt="Slide 3" class="responsive-image">
+            </div>
+            <!-- Left and Right Arrows -->
+            <button class="arrow left-arrow" onclick="changeSlide(-1, 'diwali')">&#10094;</button>
+            <button class="arrow right-arrow" onclick="changeSlide(1, 'diwali')">&#10095;</button>
+        </div>
+
+        <!-- Video Placeholder -->
+        <div class="video-container">
+            <video controls>
+                <source src="Diwali_2022.mp4" type="video/mp4"> <!-- Replace with your video file -->
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- Slideshow Section for Navratri 2023 -->
+        <h2>2. Navratri 2023</h2>
+        
+        <div class="slideshow-container" id="navratriSlideshow">
+            <div class="slide active">
+                <img src="IMG_0766.JPG" alt="Slide 1" class="responsive-image">
+            </div>
+            <div class="slide">
+                <img src="IMG20231015180717.jpg" alt="Slide 2" class="responsive-image">
+            </div>
+            <div class="slide">
+                <img src="IMG20231015181434_01.jpg" alt="Slide 3" class="responsive-image">
+            </div>
+            <!-- Left and Right Arrows -->
+            <button class="arrow left-arrow" onclick="changeSlide(-1, 'navratri')">&#10094;</button>
+            <button class="arrow right-arrow" onclick="changeSlide(1, 'navratri')">&#10095;</button>
+        </div>
+
+        <!-- Video Placeholder -->
+        <div class="video-container">
+            <video controls>
+                <source src="Navaratri 2023.mp4" type="video/mp4"> <!-- Replace with your video file -->
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+        <a href="https://www.instagram.com/loughreaindiancc/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/your_profile" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+    </div>
+
+    <!-- JavaScript for Slideshow Functionality -->
+    <script>
+        function changeSlide(direction, event) {
+            const slides = document.querySelectorAll(`#${event}Slideshow .slide`);
+            let currentSlide = Array.from(slides).findIndex(slide => slide.classList.contains('active'));
+            currentSlide = (currentSlide + direction + slides.length) % slides.length; // Loop back if at ends
+            
+            // Show the new slide
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (i === currentSlide) {
+                    slide.classList.add('active');
+                }
+            });
+        }
+
+        // Show the first slide initially for both slideshows
+        changeSlide(0, 'navratri'); 
+        changeSlide(0, 'diwali'); 
+    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <!-- Footer Section -->
+<footer style="background-color: #222; color: white; padding: 20px 0; text-align: center;">
+    <div class="footer-content">
+        <h2>Loughrea Indian Cultural Community (LICC)</h2>
+        <p>Uniting the community through cultural celebrations, events, and festivities.</p>
+        
+        <p>Join us in our upcoming events and celebrate the rich cultural heritage of India right here in Loughrea.</p>
+        
+        <p>
+            <strong>Contact Us:</strong><br>
+            Email: loughreaindiancc@gmail.com<br>
+        </p>
+        
+        <!-- Social Media Links -->
+        
+    </div>
+    
+    <!-- Footer Bottom Text -->
+    <div style="background-color: #111; padding: 10px 0; margin-top: 20px;">
+        <p style="margin: 0;">&copy; 2024 Loughrea Indian Cultural Community. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

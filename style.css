@@ -1,0 +1,192 @@
+/* General body styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Header styles */
+.header {
+  position: relative;
+  padding: 0;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 250px;
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+/* Header text styles, centered */
+.header h1 {
+  font-family: 'Arial Black', Arial, sans-serif; /* Set font to Arial Black */
+  font-style: italic; /* Set the text to italic */
+  font-size: 3rem;
+  margin: 0;
+  color: rgb(0, 0, 0);
+  z-index: 1;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  white-space: pre-line;
+}
+
+/* Navigation bar */
+.topnav {
+  display: flex;
+  justify-content: flex-end; /* Align to the right */
+  background-color: #e0e0e0;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+/* Topnav links */
+.topnav a {
+  padding: 14px 20px;
+  color: #333;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.topnav a:hover {
+  background-color: #ccc;
+  color: black;
+}
+
+/* Hamburger icon for small screens */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+/* Sidebar navigation (hidden by default) */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Image container for side by side images */
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.responsive-image {
+  width: 400px;
+  height: 400px;
+  margin: 100px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Responsive design for small screens */
+@media screen and (max-width: 600px) {
+  .topnav {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .sidenav {
+    width: 250px;
+  }
+
+  .sidenav a {
+    font-size: 20px;
+  }
+
+  .header {
+    align-items: flex-start;
+  }
+
+  .image-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .responsive-image {
+    width: 80%;
+    height: auto;
+    margin: 10px 0;
+  }
+}
+
+/* Adjust header size for very small screens */
+@media screen and (max-width: 400px) {
+  .header h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Social media icons */
+.social-icons {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.social-icons a {
+  font-size: 24px;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.social-icons .instagram {
+  color: #E1306C;
+}
+
+.social-icons .facebook {
+  color: #3b5998;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+}

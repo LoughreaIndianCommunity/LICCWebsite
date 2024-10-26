@@ -111,12 +111,20 @@
     </div>
 
     <!-- Hamburger menu icon -->
-    <div class="hamburger" onclick="toggleMenu()">
-        &#9776;
-    </div>
+    <div class="hamburger" onclick="toggleSidenav()">&#9776;</div>
 
     <!-- Navigation bar, initially hidden on small screens -->
     <div id="navLinks" class="topnav">
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Upcoming Events.html">Upcoming Events</a>
+        <a href="Booking.html">Booking</a>
+        <a href="Contacts.html">Contacts</a>
+    </div>
+
+    <!-- Sidebar navigation -->
+    <div class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleSidenav()">&times;</a>
         <a href="index.html">Home</a>
         <a href="About.html">About</a>
         <a href="Upcoming Events.html">Upcoming Events</a>
@@ -209,6 +217,17 @@
         // Show the first slide initially for both slideshows
         changeSlide(0, 'navratri'); 
         changeSlide(0, 'diwali'); 
+    </script>
+    <script>
+        // JavaScript for toggling the sidenav
+        function toggleSidenav() {
+            const sidenav = document.querySelector('.sidenav');
+            if (sidenav.style.width === '0px' || sidenav.style.width === '') {
+                sidenav.style.width = '250px'; // Open the sidenav
+            } else {
+                sidenav.style.width = '0'; // Close the sidenav
+            }
+        }
     </script>
     <br>
     <br>

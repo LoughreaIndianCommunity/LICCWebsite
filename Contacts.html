@@ -99,6 +99,23 @@
                 margin-right: 0; /* Reset margin for small screens */
                 margin-bottom: 15px; /* Space between image and text */
             }
+
+            /* Top navigation style for mobile */
+            #navLinks {
+                display: none; /* Hide navigation links by default */
+                flex-direction: column; /* Stack links vertically */
+                width: 100%; /* Full width */
+                background-color: #f4f4f4; /* Background color for dropdown */
+                position: absolute; /* Positioning */
+                top: 50px; /* Below the hamburger menu */
+                left: 0; /* Align to the left */
+                z-index: 100; /* Ensure it stays above other content */
+            }
+
+            #navLinks a {
+                padding: 10px; /* Padding for links */
+                text-align: center; /* Center text */
+            }
         }
 
         /* Additional styling for header and footer */
@@ -133,17 +150,25 @@
     </div>
 
     <!-- Hamburger Menu Icon for Mobile View -->
-    <div class="hamburger" onclick="toggleMenu()">
-        &#9776;
-    </div>
+    <div class="hamburger" onclick="toggleSidenav()">&#9776;</div>
 
-    <!-- Top Navigation Links -->
+    <!-- Navigation bar, initially hidden on small screens -->
     <div id="navLinks" class="topnav">
         <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="events.html">Upcoming Events</a>
-        <a href="booking.html">Booking</a>
-        <a href="contacts.html">Contact</a>
+        <a href="About.html">About</a>
+        <a href="Upcoming Events.html">Upcoming Events</a>
+        <a href="Booking.html">Booking</a>
+        <a href="Contacts.html">Contacts</a>
+    </div>
+
+    <!-- Sidebar navigation -->
+    <div class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleSidenav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Upcoming Events.html">Upcoming Events</a>
+        <a href="Booking.html">Booking</a>
+        <a href="Contacts.html">Contacts</a>
     </div>
 
     <!-- Main Content -->
@@ -210,9 +235,14 @@
     
     <!-- JavaScript for Menu Toggle -->
     <script>
-        function toggleMenu() {
-            const navLinks = document.getElementById("navLinks");
-            navLinks.style.display = navLinks.style.display === "block" ? "none" : "block";
+        // JavaScript for toggling the sidenav
+        function toggleSidenav() {
+            const sidenav = document.querySelector('.sidenav');
+            if (sidenav.style.width === '0px' || sidenav.style.width === '') {
+                sidenav.style.width = '250px'; // Open the sidenav
+            } else {
+                sidenav.style.width = '0'; // Close the sidenav
+            }
         }
     </script>
 </body>

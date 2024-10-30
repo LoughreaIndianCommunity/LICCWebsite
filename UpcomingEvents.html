@@ -8,101 +8,8 @@
     
     <title>Loughrea Indian Cultural Community LICC</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts for fancy fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
-    <style>
-        /* General Form Styling */
-        .form-container {
-            margin: 20px;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-            max-width: 500px;
-        }
-
-        /* Form Title Styling */
-        .form-container h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 36px;
-            color: #2E5166;
-            margin-bottom: 20px;
-        }
-
-        /* Events section styling */
-        .events-section {
-            margin: 50px;
-        }
-
-        .event-cards {
-            display: flex;
-            flex-direction: column; /* Stack events vertically */
-            gap: 20px;
-            justify-content: space-between;
-        }
-
-        .event-card {
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            padding: 15px;
-            background-color: #f9f9f9;
-        }
-
-        .event-details h3 {
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-
-        .event-details p {
-            font-size: 14px;
-            margin-bottom: 10px;
-            color: #666;
-        }
-
-        .book-btn {
-            display: block;
-            text-align: center;
-            background-color: #007bff;
-            color: white;
-            padding: 10px;
-            border-radius: 5px;
-            text-decoration: none;
-            margin: 15px 0 0 0;
-        }
-
-        .book-btn:hover {
-            background-color: #0056b3;
-        }
-
-        /* Additional CSS for social media icons */
-        .social-icons {
-            position: fixed; 
-            bottom: 10px; 
-            right: 10px; 
-            display: flex;
-            gap: 10px;
-            z-index: 1000; 
-        }
-
-        .social-icons a {
-            font-size: 24px;
-            text-decoration: none;
-            transition: transform 0.3s; 
-        }
-
-        .social-icons .instagram {
-            color: #E1306C; 
-        }
-
-        .social-icons .facebook {
-            color: #3b5998;
-        }
-
-        .social-icons a:hover {
-            transform: scale(1.1); 
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
 </head>
 <body>
 
@@ -110,29 +17,25 @@
         <h1>Loughrea Indian Cultural Community LICC</h1>
     </div>
 
-    <!-- Hamburger menu icon -->
     <div class="hamburger" onclick="toggleSidenav()">&#9776;</div>
 
-    <!-- Navigation bar, initially hidden on small screens -->
     <div id="navLinks" class="topnav">
         <a href="index.html">Home</a>
         <a href="About.html">About</a>
-        <a href="Upcoming Events.html">Upcoming Events</a>
+        <a href="UpcomingEvents.html">Upcoming Events</a>
         <a href="Booking.html">Booking</a>
         <a href="Contacts.html">Contacts</a>
     </div>
 
-    <!-- Sidebar navigation -->
     <div class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="toggleSidenav()">&times;</a>
         <a href="index.html">Home</a>
         <a href="About.html">About</a>
-        <a href="Upcoming Events.html">Upcoming Events</a>
+        <a href="UpcomingEvents.html">Upcoming Events</a>
         <a href="Booking.html">Booking</a>
         <a href="Contacts.html">Contacts</a>
     </div>
 
-    <!-- Main Content -->
     <div class="content">
         <p>Our website provides a comprehensive events page where you can stay updated on all upcoming events. Each event listing includes detailed information 
             such as the date, time, location, and a brief description of what to expect. If you're interested in attending, you can easily reserve your spot by filling 
@@ -141,11 +44,8 @@
         </p>
         <h1> Explore Our Upcoming Events</h1>
 
-        <!-- Explore Our Upcoming Events Section -->
         <div class="events-section">
             <div class="event-cards">
-
-                <!-- Navratri Festival First -->
                 <div class="event-card">
                     <div class="event-details">
                         <h3>Navratri Festival Celebration</h3>
@@ -154,63 +54,46 @@
                     </div>
                 </div>
 
-                <!-- Diwali Festival Next -->
                 <div class="event-card">
                     <div class="event-details">
                         <h3>Diwali Dhamaka: Festival of Lights</h3>
                         <p>Sun, 27 Oct | Loughrea Community Hall</p>
                         <p>Book your tickets soon </p>
-
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
 
-    <!-- Social Media Icons -->
     <div class="social-icons">
         <a href="https://www.instagram.com/loughreaindiancc/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
         <a href="https://www.facebook.com/your_profile" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
     </div>
 
-    <!-- JavaScript -->
     <script>
-        // JavaScript for toggling the sidenav
         function toggleSidenav() {
             const sidenav = document.querySelector('.sidenav');
             if (sidenav.style.width === '0px' || sidenav.style.width === '') {
-                sidenav.style.width = '250px'; // Open the sidenav
+                sidenav.style.width = '250px';
             } else {
-                sidenav.style.width = '0'; // Close the sidenav
+                sidenav.style.width = '0';
             }
         }
     </script>
-    <br>
-    <br>
-    <br>
-    <br>
-    
-    <!-- Footer Section -->
-    <footer style="background-color: #222; color: white; padding: 20px 0; text-align: center;">
+
+    <footer>
         <div class="footer-content">
             <h2>Loughrea Indian Cultural Community (LICC)</h2>
             <p>Uniting the community through cultural celebrations, events, and festivities.</p>
-            
             <p>Join us in our upcoming events and celebrate the rich cultural heritage of India right here in Loughrea.</p>
-            
             <p>
                 <strong>Contact Us:</strong><br>
                 Email: loughreaindiancc@gmail.com<br>
             </p>
-            
-            <!-- Social Media Links -->
-            
         </div>
         
-        <!-- Footer Bottom Text -->
-        <div style="background-color: #111; padding: 10px 0; margin-top: 20px;">
-            <p style="margin: 0;">&copy; 2024 Loughrea Indian Cultural Community. All Rights Reserved.</p>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Loughrea Indian Cultural Community. All Rights Reserved.</p>
         </div>
     </footer>
 </body>

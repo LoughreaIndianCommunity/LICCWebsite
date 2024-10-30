@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore and book tickets for upcoming Indian cultural events in Loughrea. Experience Navratri, Diwali, and more with the Loughrea Indian Cultural Community (LICC).">
-    <meta name="keywords" content="Booking Indian Events Loughrea, LICC Booking, Navratri Loughrea, Diwali Loughrea, Indian Cultural Events">
+    <meta name="description" content="Stay updated on upcoming Indian cultural events in Loughrea. Book your tickets for Navratri and Diwali celebrations with LICC and join us in celebrating Indian culture.">
+    <meta name="keywords" content="Loughrea Indian Cultural Community, LICC events, Indian cultural events, Navratri, Diwali, booking, Loughrea community events">
     
     <title>Loughrea Indian Cultural Community LICC</title>
     <link rel="stylesheet" href="style.css">
@@ -33,37 +33,20 @@
         /* Events section styling */
         .events-section {
             margin: 50px;
-            text-align: center;
-        }
-
-        .events-section h2 {
-            font-size: 36px;
-            font-family: 'Playfair Display', serif;
-            margin-bottom: 30px;
         }
 
         .event-cards {
             display: flex;
-            justify-content: space-around;
+            flex-direction: column; /* Stack events vertically */
+            gap: 20px;
+            justify-content: space-between;
         }
 
         .event-card {
-            width: 300px;
             border: 1px solid #ddd;
             border-radius: 10px;
-            overflow: hidden;
-            text-align: left;
-            margin: 10px;
-        }
-
-        .event-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .event-details {
             padding: 15px;
+            background-color: #f9f9f9;
         }
 
         .event-details h3 {
@@ -85,7 +68,7 @@
             padding: 10px;
             border-radius: 5px;
             text-decoration: none;
-            margin: 15px;
+            margin: 15px 0 0 0;
         }
 
         .book-btn:hover {
@@ -148,36 +131,36 @@
         <a href="Booking.html">Booking</a>
         <a href="Contacts.html">Contacts</a>
     </div>
+
     <!-- Main Content -->
     <div class="content">
-        <h1>Booking Page</h1>
-        <p>You have the opportunity to explore and book tickets for a wide range of upcoming events, such as concerts, sports matches, theater performances, festivals, 
-           or special exhibitions. Whether you're interested in music, arts, entertainment, or sports, you can choose events based on your preferences, location,
-           and schedule, and proceed with booking tickets through various platforms. I can help you find event details, guide you through the booking process, and provide recommendations tailored to your interests.</p>
+        <p>Our website provides a comprehensive events page where you can stay updated on all upcoming events. Each event listing includes detailed information 
+            such as the date, time, location, and a brief description of what to expect. If you're interested in attending, you can easily reserve your spot by filling 
+            out the booking form.
+            ​If you have any questions or need further information, you can reach out to us through our contact page.
+        </p>
+        <h1> Explore Our Upcoming Events</h1>
 
         <!-- Explore Our Upcoming Events Section -->
         <div class="events-section">
-            <h2>Book your tickets now</h2>
             <div class="event-cards">
 
                 <!-- Navratri Festival First -->
                 <div class="event-card">
-                    <img src="Navaratri.jpg" alt="Navratri Festival">
                     <div class="event-details">
                         <h3>Navratri Festival Celebration</h3>
                         <p>Fri, 5 Oct | Loughrea Community Hall</p>
-                        <p style="color: red;">Booked Out</p>
-                        <!-- <a href="https://docs.google.com/forms/d/e/1FAIpQLSerRt378L8fkgkaF7Q98xvaR-3ZIBOLdCscD12M6uQ6YeH4ug/viewform?usp=sf_link" target="_blank" class="book-btn">Book Now</a> -->
+                        <p>Booked Out </p>
                     </div>
                 </div>
 
                 <!-- Diwali Festival Next -->
                 <div class="event-card">
-                    <img src="diwali.jpg" alt="Diwali Dhamaka">
                     <div class="event-details">
                         <h3>Diwali Dhamaka: Festival of Lights</h3>
                         <p>Sun, 27 Oct | Loughrea Community Hall</p>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSerRt378L8fkgkaF7Q98xvaR-3ZIBOLdCscD12M6uQ6YeH4ug/viewform?usp=sf_link" target="_blank" class="book-btn">Book Now</a>
+                        <p>Book your tickets soon </p>
+
                     </div>
                 </div>
 

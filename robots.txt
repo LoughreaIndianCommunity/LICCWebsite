@@ -1,0 +1,19 @@
+# Allow all bots to crawl the entire website
+User-agent: *
+Disallow:
+
+# Disallow access to the admin or backend sections if applicable
+Disallow: /admin/
+Disallow: /backend/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+
+# Prevent bots from accessing specific file types
+Disallow: /*.php$
+Disallow: /*.zip$
+Disallow: /*.sql$
+Disallow: /*.json$
+
+# Sitemap location
+Sitemap: https://www.loughreaindiancc.com/sitemap.xml

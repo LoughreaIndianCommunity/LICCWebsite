@@ -7,29 +7,34 @@
     <meta name="description" content="Loughrea Indian Cultural Community (LICC) brings together the Indian community in Loughrea, celebrating Indian culture through festivals, music, dance, and traditions. Join us in promoting and preserving Indian heritage in Ireland.">
     <meta name="keywords" content="Loughrea Indian Community, Indian Cultural Events Loughrea, LICC, Indian Festivals Ireland, Indian Heritage Loughrea">
     <meta name="robots" content="index, follow">
-
     <title>Loughrea Indian Cultural Community LICC</title>
+
+    <!-- CSS Links -->
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-    <div class="header">
+    <!-- Header Section -->
+    <header class="header">
         <h1>Loughrea Indian Cultural Community LICC</h1>
-    </div>
+    </header>
 
+    <!-- Hamburger Menu for Mobile -->
     <div class="hamburger" onclick="toggleSidenav()">&#9776;</div>
 
-    <div id="navLinks" class="topnav">
+    <!-- Main Navigation Links -->
+    <nav id="navLinks" class="topnav">
         <a href="index.html">Home</a>
         <a href="About.html">About</a>
         <a href="UpcomingEvents.html">Upcoming Events</a>
         <a href="Booking.html">Booking</a>
         <a href="Contacts.html">Contacts</a>
-    </div>
+    </nav>
 
-    <div class="sidenav">
+    <!-- Side Navigation for Mobile -->
+    <div class="sidenav" id="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="toggleSidenav()">&times;</a>
         <a href="index.html">Home</a>
         <a href="About.html">About</a>
@@ -38,53 +43,53 @@
         <a href="Contacts.html">Contacts</a>
     </div>
 
-    <div class="content">
+    <!-- Main Content Section -->
+    <main class="content">
         <h3>Welcome to the Loughrea Indian Cultural Community LICC</h3>
         <p>We are a community that celebrates and promotes Indian culture in Loughrea. Our goal is to connect people, share traditions, and create a welcoming space for anyone interested in Indian festivals, food, music, and dance. Join us in celebrating our heritage and building a connected community!</p>
         
         <div class="image-container">
-            <img src="P1I1.jpg" alt="Image 1" class="responsive-image">
-            <img src="P1I2.jpg" alt="Image 2" class="responsive-image">
+            <img src="P1I1.jpg" alt="Cultural celebration image" class="responsive-image">
+            <img src="P1I2.jpg" alt="Traditional Indian event" class="responsive-image">
         </div>
-    </div>
+    </main>
 
-    <div class="events-section">
-        <h2>Feedback form</h2>
+    <!-- Events Section -->
+    <section class="events-section">
+        <h2>Feedback Form</h2>
         <div class="event-cards">
-
             <div class="event-card">
                 <div class="event-details">
-                    <h3>Dewali Festival Celebration 2024</h3>
-                    <p>Please fill out this Feedback form below to help us improve your Experience.</p>
-                    <p><a href="https://forms.gle/ajNym1F3AAK2M5ix9">Feedback Form</a></p>
+                    <h3>Diwali Festival Celebration 2024</h3>
+                    <p>Please fill out this Feedback form below to help us improve your experience.</p>
+                    <p><a href="https://forms.gle/ajNym1F3AAK2M5ix9" target="_blank">Feedback Form</a></p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Social Media Links -->
     <div class="social-icons">
         <a href="https://www.instagram.com/loughreaindiancc/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
         <a href="https://www.facebook.com/your_profile" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
     </div>
 
+    <!-- Footer Section -->
     <footer>
         <div class="footer-content">
             <h2>Loughrea Indian Cultural Community (LICC)</h2>
-            <br>
             <p>Uniting the community through cultural celebrations, events, and festivities.</p>
-            <br>
             <p>Join us in our upcoming events and celebrate the rich cultural heritage of India right here in Loughrea.</p>
-            <br>
             <p><strong>Contact Us:</strong><br>
-                Email: loughreaindiancc@gmail.com
-                <br>
+                Email: <a href="mailto:loughreaindiancc@gmail.com">loughreaindiancc@gmail.com</a>
             </p>
-            <br>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2024 Loughrea Indian Cultural Community. All Rights Reserved.</p>
         </div>
     </footer>
 
+    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
